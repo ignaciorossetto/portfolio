@@ -13,7 +13,7 @@ const Footer = () => {
       <div className='h-[20rem] mb-5 bg-[url("/gradient-bg.jpg")] bg-cover bg-center rounded-3xl p-10 flex flex-col gap-10 justify-center items-center'>
         <h1 className="font-semibold text-4xl">Ignacio Rossetto</h1>
         <a
-          className="font-semibold text-3xl hover:scale-105 duration-200 hover:text-slate-600 "
+          className="font-semibold text-xl sm:text-3xl hover:scale-105 duration-200 hover:text-slate-600 "
           href="mailto:ignaciorossetto@hotmail.com?subject=Contact%20from%20portfolio"
         >
           ignaciorossetto@hotmail.com
@@ -25,7 +25,7 @@ const Footer = () => {
             
           </SocialButton>
           <p
-            className="font-semibold text-3xl"
+            className="font-semibold text-xl sm:text-3xl"
             
           >+54 351 6330434</p>
         </a>

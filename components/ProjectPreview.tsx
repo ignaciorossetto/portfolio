@@ -27,7 +27,7 @@ const ProjectPreview: React.FC<Props> = ({
     variants={PreviewAnimation}
     >
         <div 
-        className='h-full w-full px-10 py-6 duration-[500ms] transition-all ease-in-out hover:scale-105 bg-cover bg-no-repeat bg-center'
+        className='w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-90 hover:scale-100 bg-cover bg-no-repeat bg-center'
         style={{backgroundImage: `url(${imageUrl})`}}
         >
         <div className='flex justify-between'>

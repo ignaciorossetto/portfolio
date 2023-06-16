@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Navbar/>
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
-        <div className="h-[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
+        <div className="h-auto sm:h-[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
           <h1 className="text-4xl font-semibold">Hi there! My name is Ignacio Rossetto. MERN stack dev =)</h1>
           <p className="flex-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa libero recusandae eum dicta quibusdam sequi, vel consectetur id explicabo!</p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
