@@ -40,18 +40,44 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile2.jpg')] bg-cover bg-center"/>
+        <div className="h-[30rem] rounded-3xl p-8 bg-[url('/profile1.jpg')] bg-cover bg-center"/>
       </section>
-      <section className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
+      <section id="projectsSection" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
         name="Pet Sitter Finder"
-        description="MERN stack webapp"
+        description="MERN stack webapp + socket"
         imageUrl="project-3.png"
+        bgColor="#6858e8"
+        dark
         />
-        <ProjectPreview/>
-        <ProjectPreview/>
-        <ProjectPreview/>
-        <ProjectPreview/>
+        <ProjectPreview
+        name="Karam echo a mano"
+        description="MERN stack ecommerce webapp"
+        imageUrl="project-2.png"
+        bgColor="#41525e"
+        dark
+        />
+        
+        <ProjectPreview
+        name="Grocery list"
+        description="Next 13 webapp"
+        imageUrl="project-2.png"
+        bgColor="#7f7f7f"
+        dark
+        />
+        <ProjectPreview
+        name="Promptopia"
+        description="Next 13 webapp"
+        imageUrl="project-2.png"
+        bgColor="#007ace"
+        dark
+        />
+        <ProjectPreview
+        name="Promptopia"
+        description="Next 13 webapp"
+        imageUrl="project-2.png"
+        bgColor="#cba731"
+        />
         <ProjectPreview/>
         <ProjectPreview/>
       </section>

@@ -25,6 +25,7 @@ const ProjectPreview: React.FC<Props> = ({
     initial="initial"
     whileInView="animate"
     variants={PreviewAnimation}
+    viewport={{ once: true }}
     >
         <div 
         className='w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-90 hover:scale-100 bg-cover bg-no-repeat bg-center'

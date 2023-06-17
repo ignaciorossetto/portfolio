@@ -9,6 +9,8 @@ const Footer = () => {
     initial="initial"
     whileInView="animate"
     variants={PreviewAnimation}
+    id="footerSection"
+    viewport={{ once: true }}
     >
       <div className='h-[20rem] mb-5 bg-[url("/gradient-bg.jpg")] bg-cover bg-center rounded-3xl p-10 flex flex-col gap-10 justify-center items-center'>
         <h1 className="font-semibold text-4xl">Ignacio Rossetto</h1>
