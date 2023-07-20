@@ -1,6 +1,8 @@
+"use client"
 import React from 'react'
 import Arrow from '../public/arrow.svg'
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 interface Props {
     name?: string | undefined;
@@ -8,6 +10,7 @@ interface Props {
     imageUrl?: string | undefined;
     bgColor?: string | undefined;
     dark?: boolean | undefined;
+    url?: string | undefined;
 }
 
 
@@ -17,6 +20,7 @@ const ProjectPreview: React.FC<Props> = ({
     imageUrl= "/project-1.png",
     bgColor= "#e4e4e7",
     dark= false,
+    url='/'
 }) => {
   return (
     <motion.div 
@@ -28,7 +32,7 @@ const ProjectPreview: React.FC<Props> = ({
     viewport={{ once: true }}
     >
         <div 
-        className='w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-90 hover:scale-100 bg-cover bg-no-repeat bg-center'
+        className='w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-100 hover:scale-110 bg-contain bg-no-repeat bg-center'
         style={{backgroundImage: `url(${imageUrl})`}}
         >
         <div className='flex justify-between'>
@@ -36,9 +40,9 @@ const ProjectPreview: React.FC<Props> = ({
                 <h2 className='font-medium text-lg dark:text-white'>{name}</h2>
                 <p className='text-sm text-zinc-700 dark:text-zinc-300'>{description}</p>
             </div>
-            <div className='h-12 w-12 bg-white rounded-full flex justify-center items-center transition-all duration-150 hover:scale-105  cursor-pointer'>
+            <Link href={url} className='h-12 w-12 bg-white rounded-full flex justify-center items-center transition-all duration-150 hover:scale-105  cursor-pointer'>
                 <Arrow className='h-5 w-5  '/>
-            </div>
+            </Link >
             </div>
         </div>
     </motion.div>

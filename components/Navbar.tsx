@@ -1,3 +1,4 @@
+"use client"
 import Link from 'next/link'
 import React, { useReducer } from 'react'
 import reducer from '../hooks/navBarButtonsReducer'

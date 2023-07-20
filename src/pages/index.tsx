@@ -1,3 +1,4 @@
+"use client"
 import Head from "next/head";
 import Navbar from "../../components/Navbar";
 import SocialButton from "../../components/SocialButton";
@@ -7,6 +8,7 @@ import Linkedin from '../../public/linkedin.svg';
 import Whatsapp from '../../public/whatsapp.svg';
 import ProjectPreview from "../../components/ProjectPreview";
 import Footer from "../../components/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -23,18 +25,18 @@ export default function Home() {
           <h1 className="text-4xl font-semibold">Hi there! My name is Ignacio Rossetto. MERN stack dev =)</h1>
           <p className="flex-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa libero recusandae eum dicta quibusdam sequi, vel consectetur id explicabo!</p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
-            <button className="text-white bg-black py-3 px-12 rounded-full font-medium  hover:scale-110 duration-200">Contact me</button>
+            <Link href='https://api.whatsapp.com/send?phone=+543516330434&text=Hi+Ignacio%21+I+followed+your+portfolio+link.' className="text-white bg-black py-3 px-12 rounded-full font-medium  hover:scale-110 duration-200">Contact me</Link>
             <div className="flex items-center gap-4">
-              <SocialButton bgColor="instagram" >
+              <SocialButton bgColor="instagram" url="https://www.instagram.com/ignaciorossetto/">
                 <Instagram className='w-5 h-5'/>
               </SocialButton>
-              <SocialButton bgColor="twitter">
+              <SocialButton bgColor="twitter" url="https://twitter.com/RossettoIgnacio">
                 <Twitter className='w-5 h-5'/>
               </SocialButton>
-              <SocialButton bgColor="linkedin">
+              <SocialButton bgColor="linkedin" url="https://www.linkedin.com/in/ignaciorossetto/">
                 <Linkedin className='w-5 h-5'/>
               </SocialButton>
-              <SocialButton bgColor="whatsapp">
+              <SocialButton bgColor="whatsapp" url="https://api.whatsapp.com/send?phone=+543516330434&text=Hi+Ignacio%21+I+followed+your+portfolio+link.">
                 <Whatsapp className='w-5 h-5'/>
               </SocialButton>
             </div>
@@ -45,25 +47,28 @@ export default function Home() {
       <section id="projectsSection" className="grid grid-cols-1 lg:grid-cols-2 gap-4 my-4">
         <ProjectPreview
         name="Pet Sitter Finder"
-        description="MERN stack webapp + socket"
-        imageUrl="project-3.png"
+        description="MERN stack next.js webapp + tailwind + socket"
+        imageUrl="DESKTOMOCKUPPF.png"
         bgColor="#6858e8"
         dark
+        url="https://www.petsitterfinder.com.ar/"
         />
         <ProjectPreview
-        name="Karam echo a mano"
-        description="MERN stack ecommerce webapp"
-        imageUrl="project-2.png"
+        name="Pet Sitter Finder Frontend repo"
+        description="Github repo"
+        imageUrl="DESKTOPMOCKUPPF02.png"
         bgColor="#41525e"
         dark
+        url="https://github.com/ignaciorossetto/petsitter_frontend_nextjs"
         />
         
         <ProjectPreview
-        name="Grocery list"
+        name="Pet Sitter Finder Backend repo"
         description="Next 13 webapp"
-        imageUrl="project-2.png"
+        imageUrl="SMARTPHONE.png"
         bgColor="#7f7f7f"
         dark
+        url='https://github.com/ignaciorossetto/petsitter_backend'
         />
         <ProjectPreview
         name="Promptopia"
@@ -71,15 +76,8 @@ export default function Home() {
         imageUrl="project-2.png"
         bgColor="#007ace"
         dark
+        url="https://promtopia-kohl.vercel.app/"
         />
-        <ProjectPreview
-        name="Promptopia"
-        description="Next 13 webapp"
-        imageUrl="project-2.png"
-        bgColor="#cba731"
-        />
-        <ProjectPreview/>
-        <ProjectPreview/>
       </section>
       <Footer />
     </>
