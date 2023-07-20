@@ -23,7 +23,7 @@ export default function Home() {
       <section className="grid grid-cols-1 lg:grid-cols-[2fr_1fr] gap-4 mb-4">
         <div className="h-auto sm:h-[30rem] rounded-3xl p-10 flex flex-col gap-16 bg-[url('/gradient-bg.jpg')] bg-cover">
           <h1 className="text-4xl font-semibold">Hi there! My name is Ignacio Rossetto. MERN stack dev =)</h1>
-          <p className="flex-1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis ipsa libero recusandae eum dicta quibusdam sequi, vel consectetur id explicabo!</p>
+          <p className="flex-1 ">Passionate and ambitious junior developer, skilled in <span className="font-bold"> MongoDB, MySQL, Express, Next, React, and Node.js.</span> Committed to building responsive web applications with clean code and a user-centric approach. Excited to tackle new challenges, learn from experienced developers, and contribute my creativity to dynamic projects. Let's build something remarkable together!</p>
           <div className="flex flex-col lg:flex-row items-center gap-4 justify-self-end">
             <Link href='https://api.whatsapp.com/send?phone=+543516330434&text=Hi+Ignacio%21+I+followed+your+portfolio+link.' className="text-white bg-black py-3 px-12 rounded-full font-medium  hover:scale-110 duration-200">Contact me</Link>
             <div className="flex items-center gap-4">
