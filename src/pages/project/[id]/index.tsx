@@ -35,7 +35,7 @@ const Index = () => {
           </div>
         </div>
         <div className=" rounded-3xl w-full ">
-            <ImageSlider images={project?.imageArray}/>
+            <ImageSlider images={project?.imageArray || ['']}/>
         </div>
       </section>
         <section className="grid grid-cols-1  gap-10 mb-10 lg:mt-10">
