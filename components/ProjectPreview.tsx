@@ -3,6 +3,7 @@ import React from 'react'
 import Arrow from '../public/arrow.svg'
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 
 interface Props {
     name?: string | undefined;
@@ -11,6 +12,8 @@ interface Props {
     bgColor?: string | undefined;
     dark?: boolean | undefined;
     url?: string | undefined;
+    bgPosition?: string | undefined,
+    id: number
 }
 
 
@@ -20,19 +23,26 @@ const ProjectPreview: React.FC<Props> = ({
     imageUrl= "/project-1.png",
     bgColor= "#e4e4e7",
     dark= false,
-    url='/'
+    url='/',
+    bgPosition= 'bg-bottom',
+    id
 }) => {
+    const router = useRouter()
+    const handleClick = () => {
+        router.push(`/project/${id}`)
+    }
   return (
     <motion.div 
-    className={`h-[30rem] rounded-3xl overflow-hidden ${dark ? 'dark' : ''}`}
+    className={`h-[32rem] rounded-3xl overflow-hidden ${dark ? 'dark' : ''} cursor-pointer`}
     style={{background: `${bgColor}`}}
     initial="initial"
     whileInView="animate"
     variants={PreviewAnimation}
     viewport={{ once: true }}
+    onClick={handleClick}
     >
         <div 
-        className='w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-100 hover:scale-110 bg-contain bg-no-repeat bg-center'
+        className={`w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-100 hover:scale-110 bg-contain bg-no-repeat ${bgPosition}`}
         style={{backgroundImage: `url(${imageUrl})`}}
         >
         <div className='flex justify-between'>

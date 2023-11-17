@@ -9,3 +9,34 @@ html{
 body {
     @apply max-w-[90%] w-[1080px] mx-auto;
 }
+
+
+.imageContainer{
+    display: flex;
+    align-items:baseline;
+    justify-content: center;
+    width: 100%;
+}
+.imagenCont{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sliderArrow{
+    font-size: 25px;
+    margin:5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.sliderImg{
+    width: 85%;
+    object-fit: contain;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(168,163,168,1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(168,163,168,1);
+    box-shadow: 0px 0px 15px 1px rgba(168,163,168,1);
+
+}
+

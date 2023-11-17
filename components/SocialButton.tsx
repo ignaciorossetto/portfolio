@@ -24,6 +24,9 @@ const SocialButton: React.FC<Props> = ({children, bgColor= 'black', url= '/#'}) 
         case 'whatsapp':
             bgHoverColorClass = 'hover:bg-whatsapp'
             break;
+        case 'url':
+            bgHoverColorClass = 'hover:bg-white hover:scale-110 active:scale-100 duration-200 transition-all'
+            break;
         default:
             bgHoverColorClass = 'hover:bg-black'
             break;
@@ -32,7 +35,7 @@ const SocialButton: React.FC<Props> = ({children, bgColor= 'black', url= '/#'}) 
 
   return (
     <Link href={url} className={`group h-12 w-12 bg-white ${bgHoverColorClass} rounded-full transition-colors duration-200 ease-in-out flex justify-center items-center`}>
-        <div className='fill-black group-hover:fill-white transition-colors duration-200 ease-in-out'>
+        <div className='fill-black group-hover:fill-white  transition-colors duration-200 ease-in-out ' >
             {children}
         </div>
     </Link>
