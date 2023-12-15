@@ -57,6 +57,7 @@ export default function Home() {
             bgColor={p.bgColor!}
             bgPosition={p.bgPosition}
             dark
+            bgSize={p.bgSize}
             />)
 
         }

@@ -16,5 +16,6 @@ export type Project = {
     },
     bgColor: string | null,
     bgPosition?: string | undefined,
+    bgSize?: string | undefined,
     
 }

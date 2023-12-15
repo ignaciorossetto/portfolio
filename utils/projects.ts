@@ -41,25 +41,6 @@ export const projects: Project[] = [
         bgPosition: 'bg-center'
     },
     {
-        id: 3,
-        title: 'Promptopia',
-        description: '',
-        stack: 'Next 13 webapp',
-        imageArray: ['./promptopia/SMARTPHONE.png'],
-        projectUrl: {
-            frontend: {
-                url:'https://promtopia-kohl.vercel.app/',
-                repository: null
-            } ,
-            backend: {
-                url: null,
-                repository: null
-            } 
-        },
-        bgColor: "#007ace",
-        bgPosition: 'bg-center'
-    },
-    {
         id: 4,
         title: 'Supply Construction Prices',
         description: 'Construction supplies prices (CSP) is a full stack web app that tracks and records the prices of construction supplies in Argentine pesos and US dollars. It uses express, node, mysql2, sequelize, and vite to create a fast, scalable, and secure app. CSP helps users to get accurate quotes for their construction projects and to monitor the inflation and exchange rate fluctuations in Argentina. CSP is a useful and relevant tool for the construction industry.',
@@ -77,5 +58,25 @@ export const projects: Project[] = [
         },
         bgColor: "#41525e",
         bgPosition: 'bg-center'
+    },
+    {
+        id: 5,
+        title: 'LIVE',
+        description: ' LIVE, a PWA web app powered by Next.js 14. Experience the thrill of Instagram Live simulation seamlessly with Tailwind CSS, React, and TypeScript.',
+        stack: 'Next14 - React - Typescript - tailwind',
+        imageArray: ['/live/LIVE.png'],
+        projectUrl: {
+            frontend: {
+                url:'https://inst-live.vercel.app/',
+                repository: 'https://github.com/ignaciorossetto/inst_live'
+            } ,
+            backend: {
+                url: null,
+                repository: null
+            } 
+        },
+        bgColor: "#007ace",
+        bgPosition: 'bg-center',
+        bgSize: 'bg-60'
     },
 ]

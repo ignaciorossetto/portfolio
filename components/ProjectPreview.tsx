@@ -13,7 +13,8 @@ interface Props {
     dark?: boolean | undefined;
     url?: string | undefined;
     bgPosition?: string | undefined,
-    id: number
+    id: number,
+    bgSize?: string | undefined
 }
 
 
@@ -25,7 +26,8 @@ const ProjectPreview: React.FC<Props> = ({
     dark= false,
     url='/',
     bgPosition= 'bg-bottom',
-    id
+    id,
+    bgSize='bg-contain'
 }) => {
     const router = useRouter()
     const handleClick = () => {
@@ -42,7 +44,7 @@ const ProjectPreview: React.FC<Props> = ({
     onClick={handleClick}
     >
         <div 
-        className={`w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-100 hover:scale-110 bg-contain bg-no-repeat ${bgPosition}`}
+        className={`w-full h-full px-10 py-6 duration-[500ms] transition-all ease-in-out scale-100 hover:scale-110 bg-no-repeat ${bgSize} ${bgPosition}`}
         style={{backgroundImage: `url(${imageUrl})`}}
         >
         <div className='flex justify-between'>

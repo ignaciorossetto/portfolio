@@ -11,6 +11,11 @@ body {
 }
 
 
+.bg-60{
+    background-size: 60%;
+}
+
+
 .imageContainer{
     display: flex;
     align-items:baseline;
