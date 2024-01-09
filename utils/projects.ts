@@ -56,7 +56,7 @@ export const projects: Project[] = [
                 repository: 'https://github.com/ignaciorossetto/csp_backend'
             } 
         },
-        bgColor: "#41525e",
+        bgColor: "rgb(73 106 70)",
         bgPosition: 'bg-center'
     },
     {
@@ -76,6 +76,26 @@ export const projects: Project[] = [
             } 
         },
         bgColor: "#007ace",
+        bgPosition: 'bg-center',
+        bgSize: 'bg-60'
+    },
+    {
+        id: 7,
+        title: 'GROCERY SHOPPING LIST',
+        description: 'GSL, a Progressive Web App built with Next.js 14, Tailwind, and TypeScript, simplifies grocery shopping. Enjoy a responsive and efficient experience, creating and managing your shopping list seamlessly on any device.',
+        stack: 'Next14 - React - Typescript - tailwind',
+        imageArray: ['/gsl/gsl-cellphone-view.png'],
+        projectUrl: {
+            frontend: {
+                url:'https://grocery-list-gilt.vercel.app/',
+                repository: 'https://github.com/ignaciorossetto/grocery_list'
+            } ,
+            backend: {
+                url: null,
+                repository: null
+            } 
+        },
+        bgColor: "rgb(156 157 6)",
         bgPosition: 'bg-center',
         bgSize: 'bg-60'
     },
