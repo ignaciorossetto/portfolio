@@ -97,6 +97,6 @@ export const projects: Project[] = [
         },
         bgColor: "rgb(156 157 6)",
         bgPosition: 'bg-center',
-        bgSize: 'bg-60'
+        bgSize: 'bg-40'
     },
 ]
