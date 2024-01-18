@@ -99,4 +99,23 @@ export const projects: Project[] = [
         bgPosition: 'bg-center',
         bgSize: 'bg-40'
     },
+    {
+        id: 8,
+        title: 'AWESOME PASSWORD MANAGER',
+        description: 'A React frontend app, built with Vite and styled using Tailwind CSS, securely manages and stores user accounts and passwords. It provides a user-friendly interface for adding, editing, and retrieving login credentials, ensuring a seamless and efficient experience for organizing and accessing sensitive information.',
+        stack: 'React - Typescript - tailwind - Vite',
+        imageArray: ['/apm/APM.png'],
+        projectUrl: {
+            frontend: {
+                url:'https://awesome-password-manager-frontend.vercel.app/',
+                repository: 'https://github.com/ignaciorossetto/awesome-password-manager-frontend'
+            } ,
+            backend: {
+                url: null,
+                repository: null
+            } 
+        },
+        bgColor: "rgb(93 58 58)",
+        bgPosition: 'bg-center',
+    },
 ]
